@@ -11,7 +11,36 @@ export interface FormData {
 
 export const submitContactForm = async (data: FormData): Promise<{ success: boolean; error?: string }> => {
   try {
-    // Option 1: Direct API endpoint
+    // Option 1: Formspree (Primary method)
+    if (import.meta.env.VITE_FORMSPREE_ID) {
+      const response = await fetch(`https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          contactMethod: data.contactMethod || "Not specified",
+          message: data.message,
+          _subject: `Contact Form from ${data.name}`,
+          _replyto: data.email,
+        }),
+      });
+
+      if (response.ok) {
+        return { success: true };
+      } else {
+        const errorData = await response.json();
+        return { 
+          success: false, 
+          error: errorData.error || "Failed to send message. Please try again." 
+        };
+      }
+    }
+
+    // Option 2: Direct API endpoint (fallback)
     if (import.meta.env.VITE_API_ENDPOINT) {
       const response = await fetch(import.meta.env.VITE_API_ENDPOINT, {
         method: "POST",
@@ -26,21 +55,6 @@ export const submitContactForm = async (data: FormData): Promise<{ success: bool
       } else {
         const errorData = await response.json();
         return { success: false, error: errorData.message || "Failed to send message" };
-      }
-    }
-
-    // Option 3: Formspree or similar service
-    if (import.meta.env.VITE_FORMSPREE_ID) {
-      const response = await fetch(`https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        return { success: true };
       }
     }
 
