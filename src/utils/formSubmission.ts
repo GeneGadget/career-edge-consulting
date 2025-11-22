@@ -12,8 +12,9 @@ export interface FormData {
 export const submitContactForm = async (data: FormData): Promise<{ success: boolean; error?: string }> => {
   try {
     // Option 1: Formspree (Primary method)
-    if (import.meta.env.VITE_FORMSPREE_ID) {
-      const response = await fetch(`https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`, {
+    const formspreeId = import.meta.env.VITE_FORMSPREE_ID;
+    if (formspreeId) {
+      const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -30,13 +31,22 @@ export const submitContactForm = async (data: FormData): Promise<{ success: bool
       });
 
       if (response.ok) {
+        // Formspree succeeded - return immediately, don't fall through to mailto
         return { success: true };
       } else {
-        const errorData = await response.json();
-        return { 
-          success: false, 
-          error: errorData.error || "Failed to send message. Please try again." 
-        };
+        // Try to get error message from Formspree
+        try {
+          const errorData = await response.json();
+          return { 
+            success: false, 
+            error: errorData.error || "Failed to send message. Please try again." 
+          };
+        } catch {
+          return { 
+            success: false, 
+            error: "Failed to send message. Please try again." 
+          };
+        }
       }
     }
 
