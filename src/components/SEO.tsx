@@ -58,13 +58,13 @@ const SEO = ({ title, description, keywords, image }: SEOProps) => {
     updateMetaTag("og:title", fullTitle, true);
     updateMetaTag("og:type", "website", true);
     updateMetaTag("og:url", `${baseUrl}${currentPath}`, true);
-    updateMetaTag("og:image", image || `${baseUrl}/opengraph-image.png`, true);
+    updateMetaTag("og:image", image || `${baseUrl}/favicon.png`, true);
     updateMetaTag("og:locale", language === "fr" ? "fr_CA" : "en_CA", true);
     
     // Twitter tags
     updateMetaTag("twitter:card", "summary_large_image");
     updateMetaTag("twitter:title", fullTitle);
-    updateMetaTag("twitter:image", image || `${baseUrl}/opengraph-image.png`);
+    updateMetaTag("twitter:image", image || `${baseUrl}/favicon.png`);
     
     // Language alternates (hreflang)
     const existingHreflangs = document.querySelectorAll('link[rel="alternate"][hreflang]');
