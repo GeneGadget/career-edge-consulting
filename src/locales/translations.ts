@@ -201,7 +201,7 @@ export const translations = {
     service4Feature1Full: "30-minute one-on-one coaching session",
     service4Feature2Full: "Personalized advice for your career situation",
     service4Feature3Full: "Action plan tailored to your goals",
-    service4Feature4Full: "Available via Zoom, phone, or in-person (Toronto)",
+    service4Feature4Full: "Available via Zoom, phone, or online",
     service4Feature5Full: "Flexible scheduling to fit your needs",
     service4Feature6Full: "Requires basic package booking first",
     faqTitle: "Questions? We've Got Answers.",
