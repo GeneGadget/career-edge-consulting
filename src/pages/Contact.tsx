@@ -64,7 +64,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: t("location"),
-      detail: "Toronto & Online",
+      detail: "Online",
       description: t("locationDesc"),
     },
     {
