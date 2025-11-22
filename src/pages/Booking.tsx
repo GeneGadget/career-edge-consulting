@@ -245,7 +245,7 @@ const Booking = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="hero" className="shadow-brutal">
-                <a href="mailto:contact@careeredgeconsulting.ca">{t("askQuestion")} →</a>
+                <a href="mailto:info@careeredgeconsulting.ca">{t("askQuestion")} →</a>
               </Button>
               <Button asChild size="lg" variant="hero-outline">
                 <a href="/services#faq">{t("viewFAQ")}</a>

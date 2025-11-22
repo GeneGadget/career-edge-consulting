@@ -44,15 +44,27 @@ export const submitContactForm = async (data: FormData): Promise<{ success: bool
       }
     }
 
-    // Fallback: Log to console (for development)
-    if (import.meta.env.DEV || import.meta.env.MODE === "development") {
-      console.log("Form submission (development mode):", data);
-      // Simulate API delay
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      return { success: true };
-    }
-
-    return { success: false, error: "No form submission service configured" };
+    // Fallback: Use mailto link to send email directly
+    // This works by opening the user's email client with pre-filled form data
+    const subject = encodeURIComponent(`Contact Form from ${data.name}`);
+    const emailBody = 
+      `Name: ${data.name}\n` +
+      `Email: ${data.email}\n` +
+      `Preferred Contact Method: ${data.contactMethod || "Not specified"}\n\n` +
+      `Message:\n${data.message}`;
+    const body = encodeURIComponent(emailBody);
+    
+    // Create and trigger mailto link
+    const mailtoLink = `mailto:info@careeredgeconsulting.ca?subject=${subject}&body=${body}`;
+    const mailtoAnchor = document.createElement('a');
+    mailtoAnchor.href = mailtoLink;
+    mailtoAnchor.style.display = 'none';
+    document.body.appendChild(mailtoAnchor);
+    mailtoAnchor.click();
+    document.body.removeChild(mailtoAnchor);
+    
+    // Return success - the email client should open
+    return { success: true };
   } catch (error) {
     console.error("Form submission error:", error);
     return {

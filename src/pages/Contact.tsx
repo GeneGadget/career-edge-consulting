@@ -57,8 +57,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: t("emailUs"),
-      detail: "contact@careeredgeconsulting.ca",
-      link: "mailto:contact@careeredgeconsulting.ca",
+      detail: "info@careeredgeconsulting.ca",
+      link: "mailto:info@careeredgeconsulting.ca",
       description: t("emailUsDesc"),
     },
     {
@@ -241,7 +241,7 @@ const Contact = () => {
                       className="shadow-brutal"
                     >
                       <a 
-                        href="mailto:contact@careeredgeconsulting.ca?subject=Discovery Call Request"
+                        href="mailto:info@careeredgeconsulting.ca?subject=Discovery Call Request"
                         onClick={() => trackButtonClick("schedule_discovery_call", "/contact")}
                       >
                         {t("scheduleDiscoveryCall")} →

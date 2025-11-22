@@ -47,11 +47,11 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">{t("connect")}</h4>
             <div className="space-y-3">
               <a
-                href="mailto:contact@careeredgeconsulting.ca"
+                href="mailto:info@careeredgeconsulting.ca"
                 className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 <Mail size={18} />
-                contact@careeredgeconsulting.ca
+                info@careeredgeconsulting.ca
               </a>
             </div>
           </div>
