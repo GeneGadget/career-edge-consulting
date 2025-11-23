@@ -33,7 +33,6 @@ const About = () => {
     { icon: Users, text: t("credential2") },
     { icon: TrendingUp, text: t("credential3") },
     { icon: Award, text: t("credential4") },
-    { icon: Target, text: t("credential5") },
     { icon: Heart, text: t("credential6") },
   ];
 

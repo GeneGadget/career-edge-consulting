@@ -52,7 +52,7 @@ const Home = () => {
   ];
 
   const stats = [
-    { icon: Users, value: "100+", label: t("clientsHelped") },
+    { icon: Users, value: "50+", label: t("clientsHelped") },
     { icon: TrendingUp, value: "87%", label: t("interviewRate") },
     { icon: Zap, value: "48h", label: t("avgTurnaround") },
     { icon: Star, value: "5.0", label: t("clientRating") },
