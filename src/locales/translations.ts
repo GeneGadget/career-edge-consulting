@@ -60,7 +60,7 @@ export const translations = {
     interviewRate: "Interview Rate",
     avgTurnaround: "Avg. Turnaround",
     clientRating: "Client Rating",
-    whyChoose: "Why Choose Career Edge Consulting?",
+    whyChoose: "Why Choose CareerEdge Consulting?",
     servicesOffered: "Services We Offer",
     successStories: "Success Stories",
     ctaTitle: "Ready to Land Your Dream Job?",
@@ -73,7 +73,7 @@ export const translations = {
     learnMore: "Learn More",
     
     // About
-    aboutTitle: "About Career Edge Consulting",
+    aboutTitle: "About CareerEdge Consulting",
     aboutSubtitle: "Empowering professionals to land their dream jobs",
     ourStory: "Our Story",
     whyWeExist: "Why We Exist",
@@ -154,7 +154,7 @@ export const translations = {
     testimonial2Highlight: "Newcomer success",
     testimonial3Quote: "Best $50 I ever spent. The review was brutally honest and exactly what I needed to hear. Landed my dream role 2 months later.",
     testimonial3Author: "Michelle T.",
-    testimonial3Role: "HR Specialist",
+    testimonial3Role: "Public Servant",
     testimonial3Highlight: "Dream role landed",
     ctaFinalTitle: "Ready to Stop Applying and Start Getting Hired?",
     ctaFinalSubtitle: "Book your consultation now. In 48 hours, you'll have everything you need to stand out.",
@@ -257,7 +257,7 @@ export const translations = {
     quickLinks: "Quick Links",
     connect: "Connect",
     privacyPolicy: "Privacy Policy",
-    footerCopyright: "© {year} Career Edge Consulting Inc. All rights reserved.",
+    footerCopyright: "© {year} CareerEdge Consulting Inc. All rights reserved.",
     
     // Privacy Page
     privacyTitle: "Privacy Policy & Terms of Service",
@@ -275,7 +275,7 @@ export const translations = {
     securityDesc: "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.",
     termsOfService: "Terms of Service",
     servicesSection: "Services",
-    servicesSectionDesc: "Career Edge Consulting Inc. provides career consultation services including resume reviews, resume rewrites, and job search strategy coaching. All services are subject to availability and booking confirmation.",
+    servicesSectionDesc: "CareerEdge Consulting Inc. provides career consultation services including resume reviews, resume rewrites, and job search strategy coaching. All services are subject to availability and booking confirmation.",
     bookingPayment: "Booking and Payment",
     bookingPaymentDesc: "Some services require prepayment while others allow payment after the session. All payments are processed securely through Stripe or PayPal. Payment confirmation is required before service delivery for prepayment services.",
     cancellationRefund: "Cancellation and Refund Policy",
@@ -283,7 +283,7 @@ export const translations = {
     deliverables: "Deliverables",
     deliverablesDesc: "All deliverables will be provided within the timeframe specified for each service. We strive to deliver high-quality work, but results may vary based on individual circumstances.",
     limitationLiability: "Limitation of Liability",
-    limitationLiabilityDesc: "Career Edge Consulting Inc. provides career guidance and consultation services but cannot guarantee specific outcomes such as job offers or interviews. Our services are advisory in nature.",
+    limitationLiabilityDesc: "CareerEdge Consulting Inc. provides career guidance and consultation services but cannot guarantee specific outcomes such as job offers or interviews. Our services are advisory in nature.",
     contactSection: "Contact",
     contactSectionDesc: "For questions about these terms or our privacy practices, please contact us at info@careeredgeconsulting.ca.",
     compliance: "Compliance",
@@ -357,7 +357,7 @@ export const translations = {
     interviewRate: "Taux d'entrevue",
     avgTurnaround: "Délai moyen",
     clientRating: "Note des clients",
-    whyChoose: "Pourquoi choisir Career Edge Consulting?",
+    whyChoose: "Pourquoi choisir CareerEdge Consulting?",
     servicesOffered: "Services offerts",
     successStories: "Histoires de réussite",
     ctaTitle: "Prêt à décrocher l'emploi de vos rêves?",
@@ -370,7 +370,7 @@ export const translations = {
     learnMore: "En savoir plus",
     
     // About
-    aboutTitle: "À propos de Career Edge Consulting",
+    aboutTitle: "À propos de CareerEdge Consulting",
     aboutSubtitle: "Aider les professionnels à décrocher l'emploi de leurs rêves",
     ourStory: "Notre histoire",
     whyWeExist: "Pourquoi nous existons",
@@ -554,7 +554,7 @@ export const translations = {
     quickLinks: "Liens rapides",
     connect: "Se connecter",
     privacyPolicy: "Politique de confidentialité",
-    footerCopyright: "© {year} Career Edge Consulting Inc. Tous droits réservés.",
+    footerCopyright: "© {year} CareerEdge Consulting Inc. Tous droits réservés.",
     
     // Privacy Page
     privacyTitle: "Politique de confidentialité et conditions de service",
@@ -572,7 +572,7 @@ export const translations = {
     securityDesc: "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos informations personnelles contre l'accès non autorisé, l'altération, la divulgation ou la destruction.",
     termsOfService: "Conditions de service",
     servicesSection: "Services",
-    servicesSectionDesc: "Career Edge Consulting Inc. fournit des services de consultation de carrière, notamment des révisions de CV, des réécritures de CV et du coaching de stratégie de recherche d'emploi. Tous les services sont soumis à la disponibilité et à la confirmation de réservation.",
+    servicesSectionDesc: "CareerEdge Consulting Inc. fournit des services de consultation de carrière, notamment des révisions de CV, des réécritures de CV et du coaching de stratégie de recherche d'emploi. Tous les services sont soumis à la disponibilité et à la confirmation de réservation.",
     bookingPayment: "Réservation et paiement",
     bookingPaymentDesc: "Certains services nécessitent un prépaiement tandis que d'autres permettent le paiement après la session. Tous les paiements sont traités en toute sécurité via Stripe ou PayPal. La confirmation du paiement est requise avant la livraison du service pour les services de prépaiement.",
     cancellationRefund: "Politique d'annulation et de remboursement",
@@ -580,7 +580,7 @@ export const translations = {
     deliverables: "Livrables",
     deliverablesDesc: "Tous les livrables seront fournis dans le délai spécifié pour chaque service. Nous nous efforçons de fournir un travail de haute qualité, mais les résultats peuvent varier selon les circonstances individuelles.",
     limitationLiability: "Limitation de responsabilité",
-    limitationLiabilityDesc: "Career Edge Consulting Inc. fournit des services de conseil et de consultation de carrière mais ne peut garantir des résultats spécifiques tels que des offres d'emploi ou des entrevues. Nos services sont de nature consultative.",
+    limitationLiabilityDesc: "CareerEdge Consulting Inc. fournit des services de conseil et de consultation de carrière mais ne peut garantir des résultats spécifiques tels que des offres d'emploi ou des entrevues. Nos services sont de nature consultative.",
     contactSection: "Contact",
     contactSectionDesc: "Pour toute question concernant ces conditions ou nos pratiques de confidentialité, veuillez nous contacter à info@careeredgeconsulting.ca.",
     compliance: "Conformité",

@@ -22,8 +22,8 @@ const SEO = ({ title, description, keywords, image }: SEOProps) => {
     
     // Update title
     const fullTitle = title 
-      ? `${title} | Career Edge Consulting Inc.`
-      : "Career Edge Consulting Inc. | Resume & Job Search Coaching";
+      ? `${title} | CareerEdge Consulting Inc.`
+      : "CareerEdge Consulting Inc. | Resume & Job Search Coaching";
     document.title = fullTitle;
     
     // Update or create meta tags

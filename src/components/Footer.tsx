@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">Career Edge Consulting</h3>
+            <h3 className="text-2xl font-bold mb-4">CareerEdge Consulting</h3>
             <p className="text-primary-foreground/80">
               {t("footerTagline")}
             </p>

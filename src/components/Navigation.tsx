@@ -32,7 +32,7 @@ const Navigation = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-lg group-hover:opacity-40 transition-opacity" />
               <h1 className="relative text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent group-hover:scale-105 transition-transform">
-                Career Edge Consulting
+                CareerEdge Consulting
               </h1>
             </div>
           </Link>
