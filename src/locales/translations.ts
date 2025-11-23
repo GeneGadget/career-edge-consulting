@@ -451,7 +451,7 @@ export const translations = {
     testimonial2Highlight: "Succès de nouveau venu",
     testimonial3Quote: "Meilleur 50 $ que j'ai jamais dépensé. La révision était brutalement honnête et exactement ce que j'avais besoin d'entendre. J'ai obtenu le rôle de mes rêves 2 mois plus tard.",
     testimonial3Author: "Michelle T.",
-    testimonial3Role: "Spécialiste RH",
+    testimonial3Role: "Fonctionnaire",
     testimonial3Highlight: "Rôle de rêve obtenu",
     ctaFinalTitle: "Prêt à arrêter de postuler et à commencer à être embauché?",
     ctaFinalSubtitle: "Réservez votre consultation maintenant. Dans 48 heures, vous aurez tout ce dont vous avez besoin pour vous démarquer.",
