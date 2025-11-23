@@ -72,13 +72,17 @@ export const submitContactForm = async (data: FormData): Promise<{ success: bool
 
     // Fallback: Use mailto link to send email directly
     // This works by opening the user's email client with pre-filled form data
-    const subject = encodeURIComponent(`Contact Form from ${data.name}`);
+    // Basic sanitization for mailto links
+    const sanitize = (text: string): string => {
+      return text.replace(/[<>"]/g, "").slice(0, 500); // Remove potentially dangerous chars and limit length
+    };
+    const subject = encodeURIComponent(sanitize(`Contact Form from ${data.name}`));
     const emailBody = 
-      `Name: ${data.name}\n` +
-      `Email: ${data.email}\n` +
-      `Phone: ${data.phone || "Not provided"}\n` +
-      `Preferred Contact Method: ${data.contactMethod || "Not specified"}\n\n` +
-      `Message:\n${data.message}`;
+      `Name: ${sanitize(data.name)}\n` +
+      `Email: ${sanitize(data.email)}\n` +
+      `Phone: ${data.phone ? sanitize(data.phone) : "Not provided"}\n` +
+      `Preferred Contact Method: ${data.contactMethod ? sanitize(data.contactMethod) : "Not specified"}\n\n` +
+      `Message:\n${sanitize(data.message)}`;
     const body = encodeURIComponent(emailBody);
     
     // Create and trigger mailto link
