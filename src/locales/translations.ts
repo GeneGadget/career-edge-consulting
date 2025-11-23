@@ -252,7 +252,7 @@ export const translations = {
     sendAMessage: "Send a Message",
     
     // Footer
-    footerTagline: "Empowering professionals and newcomers to land meaningful roles with confidence.",
+    footerTagline: "Guiding individuals at every transition, whether starting out, starting over, or starting fresh, to discover their strengths and move confidently into the careers they aspire to.",
     quickLinks: "Quick Links",
     connect: "Connect",
     privacyPolicy: "Privacy Policy",
@@ -548,7 +548,7 @@ export const translations = {
     sendAMessage: "Envoyer un message",
     
     // Footer
-    footerTagline: "Aider les professionnels et les nouveaux arrivants à obtenir des rôles significatifs avec confiance.",
+    footerTagline: "Guider les individus à chaque transition, qu'ils commencent, recommencent ou repartent à zéro, pour découvrir leurs forces et avancer avec confiance vers les carrières auxquelles ils aspirent.",
     quickLinks: "Liens rapides",
     connect: "Se connecter",
     privacyPolicy: "Politique de confidentialité",
