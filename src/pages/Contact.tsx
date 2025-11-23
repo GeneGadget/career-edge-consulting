@@ -20,6 +20,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     contactMethod: "",
     message: "",
   });
@@ -33,6 +34,7 @@ const Contact = () => {
       const result = await submitContactForm({
         name: formData.name,
         email: formData.email,
+        phone: formData.phone || undefined,
         contactMethod: formData.contactMethod,
         message: formData.message,
       });
@@ -40,7 +42,7 @@ const Contact = () => {
       if (result.success) {
         toast.success(t("messageSent"));
         trackFormSubmission("contact_form", true);
-        setFormData({ name: "", email: "", contactMethod: "", message: "" });
+        setFormData({ name: "", email: "", phone: "", contactMethod: "", message: "" });
       } else {
         toast.error(result.error || "Failed to send message. Please try again.");
         trackFormSubmission("contact_form", false);
@@ -130,6 +132,17 @@ const Contact = () => {
                       />
                     </div>
                     <div>
+                      <Label htmlFor="phone" className="text-base">{t("yourPhone")}</Label>
+                      <Input
+                        id="phone"
+                        type="tel"
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        className="mt-2"
+                        placeholder={language === "fr" ? "(555) 123-4567" : "(555) 123-4567"}
+                      />
+                    </div>
+                    <div>
                       <Label htmlFor="contactMethod" className="text-base">{t("preferredContactMethod")}</Label>
                       <Select
                         value={formData.contactMethod}
@@ -141,7 +154,6 @@ const Contact = () => {
                         <SelectContent>
                           <SelectItem value="email">Email</SelectItem>
                           <SelectItem value="phone">Phone</SelectItem>
-                          <SelectItem value="zoom">Zoom</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>

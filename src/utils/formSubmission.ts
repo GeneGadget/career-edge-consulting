@@ -5,6 +5,7 @@
 export interface FormData {
   name: string;
   email: string;
+  phone?: string;
   contactMethod?: string;
   message: string;
 }
@@ -23,6 +24,7 @@ export const submitContactForm = async (data: FormData): Promise<{ success: bool
         body: JSON.stringify({
           name: data.name,
           email: data.email,
+          phone: data.phone || "",
           contactMethod: data.contactMethod || "Not specified",
           message: data.message,
           _subject: `Contact Form from ${data.name}`,
@@ -74,6 +76,7 @@ export const submitContactForm = async (data: FormData): Promise<{ success: bool
     const emailBody = 
       `Name: ${data.name}\n` +
       `Email: ${data.email}\n` +
+      `Phone: ${data.phone || "Not provided"}\n` +
       `Preferred Contact Method: ${data.contactMethod || "Not specified"}\n\n` +
       `Message:\n${data.message}`;
     const body = encodeURIComponent(emailBody);

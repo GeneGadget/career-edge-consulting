@@ -90,7 +90,6 @@ const About = () => {
                       t("whyWork3"),
                       t("whyWork4"),
                       t("whyWork5"),
-                      t("whyWork6"),
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <span className="w-6 h-6 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-bold text-sm flex-shrink-0">
