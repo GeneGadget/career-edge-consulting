@@ -5,7 +5,7 @@ import ServiceCard from "@/components/ServiceCard";
 import DecorativeBlob from "@/components/DecorativeBlob";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { FileText, Sparkles, Target, MessageCircle } from "lucide-react";
+import { FileText, Sparkles, Target } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Services = () => {
@@ -52,20 +52,6 @@ const Services = () => {
         t("service3Feature4Full"),
         t("service3Feature5Full"),
         t("service3Feature6Full"),
-      ],
-    },
-    {
-      icon: MessageCircle,
-      title: t("service4TitleFull"),
-      description: t("service4DescriptionFull"),
-      price: t("service4PriceFull"),
-      features: [
-        t("service4Feature1Full"),
-        t("service4Feature2Full"),
-        t("service4Feature3Full"),
-        t("service4Feature4Full"),
-        t("service4Feature5Full"),
-        t("service4Feature6Full"),
       ],
     },
   ];
