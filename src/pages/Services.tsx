@@ -51,7 +51,6 @@ const Services = () => {
         t("service3Feature3Full"),
         t("service3Feature4Full"),
         t("service3Feature5Full"),
-        t("service3Feature6Full"),
       ],
     },
   ];
