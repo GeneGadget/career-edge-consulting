@@ -35,7 +35,7 @@ const Booking = () => {
     const loadCalendly = () => {
       if (window.Calendly && calendlyRef.current) {
         window.Calendly.initInlineWidget({
-          // Basic Package: 2-Page Resume Review ($75 / $50 for students)
+          // Basic Package: 2-Page Resume Review ($50 / $30 for students)
           url: calendlyUrl,
           parentElement: calendlyRef.current,
           prefill: {},
